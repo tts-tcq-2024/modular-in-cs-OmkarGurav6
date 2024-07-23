@@ -7,14 +7,6 @@ namespace TelCo.ColorCoder
    
     class Program
     {
-        
-        static Program()
-        {
-            colorMapMajor = new Color[] { Color.White, Color.Red, Color.Black, Color.Yellow, Color.Violet };
-            colorMapMinor = new Color[] { Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray };
-        }
-
-        
         private static ColorPair GetColorFromPairNumber(int pairNumber)
         {
             int minorSize = colorMapMinor.Length;
