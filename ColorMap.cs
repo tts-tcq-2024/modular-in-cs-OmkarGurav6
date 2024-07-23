@@ -13,7 +13,7 @@ namespace TelCo.ColorCoder
             ColorMapInitializer.Initialize(out colorMapMajor, out colorMapMinor);
         }
 
-        public ColorPair GetColorFromPairNumber(int pairNumber)
+        public static ColorPair GetColorFromPairNumber(int pairNumber)
         {
             int minorSize = colorMapMinor.Length;
             int majorSize = colorMapMajor.Length;
@@ -30,7 +30,7 @@ namespace TelCo.ColorCoder
             return new ColorPair(colorMapMajor[majorIndex], colorMapMinor[minorIndex]);
         }
 
-        public int GetPairNumberFromColor(ColorPair pair)
+        public static int GetPairNumberFromColor(ColorPair pair)
         {
             int majorIndex = Array.IndexOf(colorMapMajor, pair.MajorColor);
             int minorIndex = Array.IndexOf(colorMapMinor, pair.MinorColor);
