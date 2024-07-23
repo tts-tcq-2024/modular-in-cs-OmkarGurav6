@@ -6,6 +6,12 @@ namespace TelCo.ColorCoder
 {
      public static class ColorMappingTests
     {
+        
+        static void Main(string[] args)
+        {
+            ColorMappingTests.RunTests();
+        }
+          
         public static void RunTests()
         {
             ValidateColorMapping(4, Color.White, Color.Brown);
