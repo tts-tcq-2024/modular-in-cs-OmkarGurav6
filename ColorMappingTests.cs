@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-     public class ColorMappingTests
+     public static class ColorMappingTests
     {
         public static void RunTests()
         {
