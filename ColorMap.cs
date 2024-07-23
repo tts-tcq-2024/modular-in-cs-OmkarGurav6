@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-    public class ColorMap
+    public static class ColorMap
     {
         private static Color[] colorMapMajor;
         private static Color[] colorMapMinor;
