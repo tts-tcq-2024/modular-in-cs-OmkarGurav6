@@ -7,19 +7,6 @@ namespace TelCo.ColorCoder
    
     class Program
     {
-        private static Color[] colorMapMajor;
-       
-        private static Color[] colorMapMinor;
-       
-        internal class ColorPair
-        {
-            internal Color majorColor;
-            internal Color minorColor;
-            public override string ToString()
-            {
-                return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
-            }
-        }
         
         static Program()
         {
@@ -79,7 +66,7 @@ namespace TelCo.ColorCoder
             return (majorIndex * colorMapMinor.Length) + (minorIndex + 1);
         }
        
- public class ColorMappingTests
+     public class ColorMappingTests
     {
         public static void RunTests()
         {
