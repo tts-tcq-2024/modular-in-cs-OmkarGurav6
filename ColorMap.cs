@@ -10,7 +10,7 @@ namespace TelCo.ColorCoder
 
         static ColorMap()
         {
-            ColorMapInitializer.Initialize(out colorMapMajor, out colorMapMinor);
+            ColorCodeManual.Initialize(out colorMapMajor, out colorMapMinor);
         }
 
         public static ColorPair GetColorFromPairNumber(int pairNumber)
